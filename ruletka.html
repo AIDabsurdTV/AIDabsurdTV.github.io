@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+	<html lang="ru">
+		<head>
+			<meta charset="utf-8">
+				<title>последняя работа 2 блока</title>
+				<link rel="icon" type="imag/png" href="i (1).png">
+					<meta name="keywords" content="скрипты обучение">
+				<link rel="stylesheet" type="text/css" href="ruletka.css">
+			<meta  name="viewport" content="width=device-width, initial-scale=1">
+			
+		</head>
+ <body>
+ 	<header>
+		<div class="conteiner-minion-№1">
+		   	<div class="minu">
+						<button class="themain">
+								<a href="index.html">Вернуться на главную</a>
+						</button>
+						<button class="button-catalogue">۞case.davidΩ</button>
+							<div class="basket">1</div>
+							<div class="minu-button">
+						<div class="button-input">
+							<button class="vxod">Вход</button>
+						</div>
+					</div>
+			</div>
+		</div>
+<!---------------------------------------------------------------------------------->
+<div class="conteiner-minion-№2">
+	<div class="container">
+		<div class="item">
+			<span class="header"  id="text">НОВИНКА</span>
+			<div class="img" style="background-image: url(img/ed0186fdec03a31343cde0510ccdefd6_i-58.jpg);"></div>
+		<a href="index.html" class="backwards">вернуться</a>
+		</div>
+	</div>						
+</div>
+<!---------------------------------------------------------------------------------->
+<div class="pupur_fast">
+	<div class="CustomHeader">войдите  в систему</div>
+		<div class="contant-minu-active">
+		 	<input type="" name=""class="login" placeholder="Введите логин"> 
+			<input type="" name="" class="pasword" placeholder="Введите пароль">
+		</div>
+		<div class="minu-button-close-vxode">
+			<button  class="open">Вход</button>
+			<button class="close">Отмена</button>
+		</div>
+</div>
+<div class="bg_popur"></div>
+<!---------------------------------------------------------------------------------->
+<script src="js/jquery-3.3.1.min.js" ></script>
+<script src="js/ruletka.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+ jQuery.easing['easeOutCirc'] = function (x, t, b, c, d) {
+		return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
+	}
+$(function() {
+    var option = {
+        speed: 6,
+        duration: 3,
+        stopImageNumber: 4
+    };
+ $("#go").click(function() {
+ 	$('#go').prop('disabled', true);
+    option.stopImageNumber = Math.random() * 11|0;
+    $(".roulette-inner  img").removeClass("active");
+    $("#config").text(JSON.stringify(option));
+    $({
+        left: 0
+    }).animate({
+        left: 844 * option.speed + 75 * (option.stopImageNumber + 6)
+    }, {
+        duration: option.duration * 1000,
+        easing: "easeOutCirc",
+        step: function(a) {
+            $(".roulette-inner").css("transform", "translateX(-" + a % 844 + "px)");
+        },
+        complete: function() {
+            $(".roulette-inner  img").eq(option.stopImageNumber + (option.stopImageNumber < 6) * 11).addClass("active");
+            $('#go').prop('disabled', false);
+        }
+    });
+  })
+});
+  </script>
+<div class="items" style="overflow: hidden; height: 126px; width: 844px;     top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;">
+<div class="roulette-inner" style="top: 24px; width: 7000px;">
+ <img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/star.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/flower.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/coin.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/mshroom.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/chomp.png" style="display: block; float: left;">
+<img src="https://icon-icons.com/icons2/206/PNG/128/Flower_-_Fire_24653.png" style="display: block; float: left;">
+<img src="http://img.informer.com/icons_mac/png/128/218/218340.png" style="display: block; float: left;">
+<img src="https://icon-icons.com/icons2/249/PNG/128/Lamp_27000.png" style="display: block; float: left;">
+<img src="http://www.iconninja.com/files/817/63/651/orange-monster-icon.png" style="display: block; float: left;">
+<img src="http://www.fsiv.com/public/images/logo-share/green/logo8.png" style="display: block; float: left;">
+<img src="http://wiki.tockdom.com/w/images/3/36/Piranha_Plant_Cup.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/star.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/flower.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/coin.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/mshroom.png" style="display: block; float: left;">
+<img src="https://raw.githubusercontent.com/skryshtafovych/Lottery-html5/master/chomp.png" style="display: block; float: left;">
+<img src="https://icon-icons.com/icons2/206/PNG/128/Flower_-_Fire_24653.png" style="display: block; float: left;">
+<img src="http://img.informer.com/icons_mac/png/128/218/218340.png" style="display: block; float: left;">
+<img src="https://icon-icons.com/icons2/249/PNG/128/Lamp_27000.png" style="display: block; float: left;">
+<img src="http://www.iconninja.com/files/817/63/651/orange-monster-icon.png" style="display: block; float: left;">
+<img src="http://www.fsiv.com/public/images/logo-share/green/logo8.png" style="display: block; float: left;">
+<img src="http://wiki.tockdom.com/w/images/3/36/Piranha_Plant_Cup.png" style="display: block; float: left;">
+</div>
+</div>
+<button id="go" onclick="play()">Go</button>
+	<footer>
+		<div class="conteiner-minion-№3">
+			<a href="https://vk.com/id282613563"class="foto" ></a>
+		</div>		
+	</footer>								
+</header>
+</body>
+</html>
+
+
+
